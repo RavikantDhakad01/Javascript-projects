@@ -1,0 +1,48 @@
+h1 {
+  text-align: center;
+  font-size: 35px;
+  color: #0ec477;
+}
+
+#input {
+  display: block;
+  font-size: 20px;
+  margin: 10px auto;
+  padding: 10px 80px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 3px 5px;
+  padding: 25px 25px;
+  border: 2px solid #0fd0be;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 420px) {
+  .btn {
+    font-size: 12px;
+    margin: 2px 1px;
+    padding: 25px 20px;
+  }
+
+  #input {
+    padding: 8px 35px;
+  }
+}
+@media screen and (max-width: 340px) {
+  #input {
+    padding: 8px 20px;
+  }
+}
