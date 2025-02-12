@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #153677, #4e085f);
+  padding-top: 125px;
+}
+.to-do-list {
+  width: 400px;
+  margin: auto;
+  background-color: white;
+  border-radius: 14px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+.to-do-list > h1:nth-child(1) {
+  font-size: 22px;
+  color: #261a79;
+  margin-left: 25px;
+}
+.to-do-list > h1:nth-child(1) > img:nth-child(1) {
+  height: 27px;
+}
+
+.search {
+  margin-top: 15px;
+}
+.search > input:nth-child(1) {
+  margin-left: 30px;
+  padding: 10px 60px;
+  border-radius: 16px;
+  border: 0;
+  outline: 0;
+  background-color: #eceaea;
+}
+#btn {
+  padding: 6px 10px;
+  border-radius: 15px;
+  margin-left: 5px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  color: white;
+  background-color: #ff5945;
+}
+.list-container {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+ul li {
+  font-size: 20px;
+  cursor: pointer;
+}
+.list-container ul li {
+  list-style-type: none;
+}
+.list-container > ul:nth-child(1) {
+  line-height: 37px;
+  font-size: 17px;
+}
+span {
+  margin-left: 18px;
+  font-size: 18px;
+}
+.checked {
+  font-size: 20px;
+  border: 0;
+  background: 0;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.cut {
+  border: 0;
+  background: 0;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 18px;
+}
+@media screen and (max-width: 450px) {
+  .container {
+    padding-top: 80px;
+  }
+  .to-do-list {
+    width: 315px;
+  }
+  .to-do-list > h1:nth-child(1) {
+    font-size: 20px;
+  }
+  .search > input:nth-child(1) {
+    margin-left: 15px;
+    padding: 10px 25px;
+  }
+
+  .list-container {
+    margin-left: 20px;
+  }
+}
