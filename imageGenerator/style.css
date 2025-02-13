@@ -5,6 +5,7 @@
 #text {
   text-align: center;
   margin-top: 70px;
+  font-size: 25px;
 }
 body {
   background-color: #39297b;
@@ -46,17 +47,52 @@ body {
   margin: auto;
   display: none;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 .images {
   width: 80%;
-  margin: 80px auto 35px;
+  margin: 70px auto 35px;
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-auto-rows: auto auto auto auto;
   grid-gap: 20px;
 }
 .images a img {
   height: 220px;
   object-fit: cover;
   width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .images {
+    grid-gap: 15px;
+  }
+  .images {
+    grid-template-columns: auto auto;
+  }
+  #text {
+    margin-top: 50pxpx;
+  }
+}
+@media screen and (max-width: 450px) {
+  #text {
+    margin-top: 42px;
+  }
+  #input {
+    padding: 7px 30px;
+  }
+  .search {
+    height: 55px;
+    width: 321px;
+  }
+  #searchBtn {
+    padding: 18px 18px;
+  }
+  .images a img {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .images {
+    grid-template-columns: auto;
+  }
 }
