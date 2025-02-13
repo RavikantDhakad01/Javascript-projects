@@ -53,7 +53,7 @@ body {
   width: 80%;
   margin: 70px auto 35px;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   grid-gap: 20px;
 }
 .images a img {
@@ -61,7 +61,11 @@ body {
   object-fit: cover;
   width: 100%;
 }
-
+@media screen and (max-width: 850px){
+  .images {
+    grid-template-columns: auto auto auto;
+  }
+}
 @media screen and (max-width: 650px) {
   .images {
     grid-gap: 15px;
