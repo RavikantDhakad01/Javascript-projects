@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #a806a8;
+  color: white;
+  font-size: 20px;
+}
+
+ul {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+label {
+  margin-left: 35px;
+}
+
+li {
+  list-style-type: none;
+  margin-right: 35px;
+}
+
+#music {
+  border-radius: 5px;
+  background-color: white;
+  border: 2px solid white;
+  padding: 5px 6px;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 40px;
+  color: #a806a8;
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.container1 {
+  display: grid;
+  grid-template-columns: 9vw 9vw 9vw;
+  grid-template-rows: 10vh 10vh 10vh;
+  margin-right: 115px;
+  font-size: 50px;
+}
+
+.box {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.b-l0 {
+  border-left: 0px;
+}
+.b-r0 {
+  border-right: 0px;
+}
+.b-t0 {
+  border-top: 0px;
+}
+.b-b0 {
+  border-bottom: 0px;
+}
+
+.container2 {
+  margin-left: 20px;
+}
+.info {
+  display: inline;
+  font-weight: bold;
+  font-size: 20px;
+  color: #349aaa;
+}
+#reset {
+  float: right;
+  margin-left: 45px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 2px solid #349aaa;
+  font-size: 13px;
+  cursor: pointer;
+  background-color: #edf9f7;
+}
+
+#img > img:nth-child(1) {
+  height: 150px;
+}
+#img {
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  .container1 {
+    grid-template-rows: 9vh 9vh 9vh;
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container1 {
+    grid-template-rows: 7vh 7vh 7vh;
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container1 {
+    grid-template-rows: 7vh vh 7vh;
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container1 {
+    grid-template-rows: 5vh 5vh 5vh;
+    font-size: 24px;
+    margin-right: 60px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container1 {
+    margin-right: 15px;
+    grid-template-rows: 4vh 4vh 4vh;
+    font-size: 22px;
+  }
+  #img > img:nth-child(1) {
+    height: 120px;
+  }
+}
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 25px;
+  }
+  .container1 {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 350px) {
+  #reset {
+    margin-left: 10px;
+  }
+  h1 {
+    font-size: 22px;
+    margin-top: 25px;
+  }
+  .main-container {
+    margin-top: 60px;
+  }
+  .container1 {
+    font-size: 15px;
+  }
+}
+
